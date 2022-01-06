@@ -1,7 +1,5 @@
 import React from 'react';
-
-const VPN_HOST = 'localhost'
-const API_ENDPOINT = 'http://' + VPN_HOST + ':5000/restapi/register'
+import {HOST, API_ENDPOINT} from './config'
 
 
 // ----------------------------------------------------------------------------------------------------
@@ -201,7 +199,7 @@ export class Register extends React.Component<{}, RegisterState> {
         return (
             <div className='RegisterInfo'>
                 {this.renderUserInfo(this.state.info.name, this.state.info.password)}
-                {this.renderPortInfo(VPN_HOST, this.state.info.port_pairs)}
+                {this.renderPortInfo(HOST, this.state.info.port_pairs)}
             </div>
         )
     }
