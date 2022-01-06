@@ -141,6 +141,7 @@ export class Register extends React.Component<{}, RegisterState> {
                     request: this.state.request,
                     info: response,
                 })
+                alert('登録が完了しました。登録情報欄を確認ください。')
             })
     }
 
