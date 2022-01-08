@@ -143,6 +143,7 @@ export class Register extends React.Component<{}, RegisterState> {
                 })
                 alert('登録が完了しました。登録情報欄を確認ください。')
             })
+            .catch(error => alert('エラーが発生しました。\n' + error))
     }
 
     renderRegisterForm(): JSX.Element {
