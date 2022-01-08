@@ -16,7 +16,8 @@ function Manual() {
                     対応しているVPNプロトコルはL2TP over IPSecおよびSoftEther VPNですので、好みのクライアントソフトを利用ください。
                 </li>
                 <li>公開したいサーバーをVPN接続URLに対してユーザ名とパスワードでVPN接続してください。<br />
-                    L2TP over IPSecプロトコルで接続する場合、事前共有鍵に {LT2P_PRE_SHARED_KEY} を設定ください。
+                    L2TP over IPSecプロトコルで接続する場合、事前共有鍵に {LT2P_PRE_SHARED_KEY} を設定ください。<br />
+                    SoftEther VPNプロトコルで接続する場合、ポート番号には443か5555を設定ください。
                 </li>
                 <li>VPN接続URLの外部アクセス用ポート番号にアクセスします。<br />
                     インターネットから外部アクセス用FQDNの外部アクセス用ポート番号に来た通信を、VPN接続したサーバーの登録ポート番号に転送します。<br />
