@@ -14,6 +14,7 @@ function Manual() {
                 </li>
                 <li>公開したいサーバーにVPNクライアントソフトをインストールしてください。<br />
                     対応しているVPNプロトコルはL2TP over IPSecおよびSoftEther VPNですので、好みのクライアントソフトを利用ください。
+                    例えばWindowsの場合L2TP over IPSecのクライアントとして、初期インストール済みのものがあります。
                 </li>
                 <li>公開したいサーバーをVPN接続URLに対してユーザ名とパスワードでVPN接続してください。<br />
                     L2TP over IPSecプロトコルで接続する場合、事前共有鍵に {LT2P_PRE_SHARED_KEY} を設定ください。<br />
