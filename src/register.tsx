@@ -90,7 +90,7 @@ export class Register extends React.Component<{}, RegisterState> {
         super(props)
         this.state = {
             request: {tcp_ports: [], udp_ports: []},
-            info: {name: 'sample', password: 'sampleでは接続できません。', port_pairs: [{'protocol': 'tcp', original: 8080, translated: 80}]}
+            info: {name: '', password: '', port_pairs: []}
         }
     }
 
