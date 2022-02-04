@@ -56,7 +56,7 @@ export function checkRegisterRequestData(data: RegisterRequestData): {isValid: b
         }
     }
     for (const port_number of port_numbers) {
-        if (isNaN(port_number)) {
+        if (Number.isNaN(port_number)) {
             return {
                 isValid: false,
                 message: '数値に変換できない文字列がポート番号欄に入力されています。\n'
