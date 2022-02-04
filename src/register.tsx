@@ -112,7 +112,7 @@ export class Register extends React.Component<{}, RegisterState> {
 
     onPortChange = (event: React.ChangeEvent<HTMLInputElement>, protocol: 'tcp' | 'udp'): void => {
         // カンマとスペースで区切り、整数型にパースする
-        const ports = event.target.value.split(/,\s*/).map(e => parseInt(e, 10))
+        const ports = event.target.value.split(/,\s*/).map(e => Math.trunc(Number(e)))
         const info = this.state.info
         if (protocol === 'tcp') {
             this.setState({
